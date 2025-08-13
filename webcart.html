@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-commerce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/webcart.css">
+
+</head>
+
+
+<body>
+  <div id="header"></div>
+
+<div class="container py-4">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8">
+      <!-- Cart Section -->
+      <div class="cart-section">
+        <h5 class="mb-3">My cart (3)</h5>
+
+        <!-- Cart Item 1 -->
+        <div class="cart-item d-flex align-items-center">
+          <img src="assets/images/cloth/1.jpg" class="me-3">
+          <div class="flex-grow-1">
+            <div class="fw-semibold">T-shirts with multiple colors, for men and lady</div>
+            <small class="text-muted">Size: medium, Color: blue, Material: Plastic</small><br>
+            <small class="text-muted">Seller: Artel Market</small>
+          </div>
+          <div class="text-end">
+            <div>$78.99</div>
+            <select class="form-select form-select-sm qty-select mt-1">
+              <option>Qty: 9</option>
+            </select>
+          </div>
+        </div>
+        <div class="cart-actions my-2">
+          <button class="btn btn-outline-danger btn-sm">Remove</button>
+          <button class="btn btn-outline-primary btn-sm">Save for later</button>
+        </div>
+
+        <!-- Cart Item 2 -->
+        <div class="cart-item d-flex align-items-center">
+          <img src="assets/images/cloth/5.jpg" class="me-3">
+          <div class="flex-grow-1">
+            <div class="fw-semibold">T-shirts with multiple colors, for men and lady</div>
+            <small class="text-muted">Size: medium, Color: blue, Material: Plastic</small><br>
+            <small class="text-muted">Seller: Best factory LLC</small>
+          </div>
+          <div class="text-end">
+            <div>$39.00</div>
+            <select class="form-select form-select-sm qty-select mt-1">
+              <option>Qty: 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="cart-actions my-2">
+          <button class="btn btn-outline-danger btn-sm">Remove</button>
+          <button class="btn btn-outline-primary btn-sm">Save for later</button>
+        </div>
+
+        <!-- Cart Item 3 -->
+        <div class="cart-item d-flex align-items-center">
+          <img src="assets/images/interior/6.jpg" class="me-3">
+          <div class="flex-grow-1">
+            <div class="fw-semibold">T-shirts with multiple colors, for men and lady</div>
+            <small class="text-muted">Size: medium, Color: blue, Material: Plastic</small><br>
+            <small class="text-muted">Seller: Artel Market</small>
+          </div>
+          <div class="text-end">
+            <div>$170.50</div>
+            <select class="form-select form-select-sm qty-select mt-1">
+              <option>Qty: 1</option>
+            </select>
+          </div>
+        </div>
+        <div class="cart-actions my-2">
+          <button class="btn btn-outline-danger btn-sm">Remove</button>
+          <button class="btn btn-outline-primary btn-sm">Save for later</button>
+        </div>
+
+        <!-- Buttons -->
+        <div class="d-flex justify-content-between mt-3">
+          <a href="#" class="btn btn-outline-primary">&larr; Back to shop</a>
+          <button class="btn btn-outline-danger">Remove all</button>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+      <!-- Coupon Box -->
+      <div class="coupon-box">
+        <label class="form-label">Have a coupon?</label>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Add coupon">
+          <button class="btn btn-outline-primary">Apply</button>
+        </div>
+      </div>
+
+      <!-- Summary Box -->
+      <div class="summary-box">
+        <div class="d-flex justify-content-between">
+          <span>Subtotal:</span>
+          <span>$1403.97</span>
+        </div>
+        <div class="d-flex justify-content-between text-danger">
+          <span>Discount:</span>
+          <span>- $60.00</span>
+        </div>
+        <div class="d-flex justify-content-between text-success">
+          <span>Tax:</span>
+          <span>+ $14.00</span>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between fw-bold">
+          <span>Total:</span>
+          <span>$1357.97</span>
+        </div>
+        <button class="btn btn-success w-100 mt-3">Checkout</button>
+        <div class="payment-icons text-center mt-3">
+          <img src="assets/images/american-express.png" alt="American Espress">
+          <img src="assets/images/visa.png" alt="Visa">
+          <img src="assets/images/card.png" alt="Mastercard">
+          <img src="assets/images/paypal.png" alt="Paypal">
+          <img src="assets/images/applepay.png" alt="Apple Pay">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features Row -->
+<div class="bg-light py-3 rounded d-flex justify-content-between align-items-center mt-3">
+  <div class="d-flex align-items-center">
+    <div class="bg-secondary bg-opacity-25 rounded-circle p-3 me-3">
+      <i class="bi bi-lock-fill text-secondary fs-4"></i>
+    </div>
+    <div>
+      <div class="fw-semibold">Secure payment</div>
+      <small class="text-muted">Have you ever finally just</small>
+    </div>
+  </div>
+
+  <div class="d-flex align-items-center">
+    <div class="bg-secondary bg-opacity-25 rounded-circle p-3 me-3">
+      <i class="bi bi-chat-left-text-fill text-secondary fs-4"></i>
+    </div>
+    <div>
+      <div class="fw-semibold">Customer support</div>
+      <small class="text-muted">Have you ever finally just</small>
+    </div>
+  </div>
+
+  <div class="d-flex align-items-center">
+    <div class="bg-secondary bg-opacity-25 rounded-circle p-3 me-3">
+      <i class="bi bi-truck text-secondary fs-4"></i>
+    </div>
+    <div>
+      <div class="fw-semibold">Free delivery</div>
+      <small class="text-muted">Have you ever finally just</small>
+    </div>
+  </div>
+</div>
+
+  <!-- Saved for Later Section -->
+  <div class="saved-section">
+    <h6>Saved for later</h6>
+    <div class="row g-3">
+      <div class="col-6 col-md-3 saved-item">
+        <img src="assets/images/tech/2.jpg">
+        <h6>$99.50</h6>
+        <p class="mb-1">GoPro HERO6 4K Action Camera - Black</p>
+        <button class="btn btn-outline-primary btn-sm">Move to cart</button>
+      </div>
+      <div class="col-6 col-md-3 saved-item">
+        <img src="assets/images/tech/4.jpg">
+        <h6>$99.50</h6>
+        <p class="mb-1">GoPro HERO6 4K Action Camera - Black</p>
+        <button class="btn btn-outline-primary btn-sm">Move to cart</button>
+      </div>
+      <div class="col-6 col-md-3 saved-item">
+        <img src="assets/images/tech/8.jpg">
+        <h6>$99.50</h6>
+        <p class="mb-1">GoPro HERO6 4K Action Camera - Black</p>
+        <button class="btn btn-outline-primary btn-sm">Move to cart</button>
+      </div>
+      <div class="col-6 col-md-3 saved-item">
+        <img src="assets/images/tech/7.jpg">
+        <h6>$99.50</h6>
+        <p class="mb-1">GoPro HERO6 4K Action Camera - Black</p>
+        <button class="btn btn-outline-primary btn-sm">Move to cart</button>
+      </div>
+    </div>
+
+<!-- Discount Banner -->
+<div class="mt-4 p-4 rounded d-flex justify-content-between align-items-center" 
+     style="background: linear-gradient(to right, #007bff, #0056d2); color: white;">
+  <div>
+    <h5 class="mb-1 fw-bold">Super discount on more than 100 USD</h5>
+    <p class="mb-0 small" style="opacity: 0.85;">Have you ever finally just write dummy info</p>
+  </div>
+  <a href="#" class="btn btn-warning fw-bold text-white">Shop now</a>
+</div>
+
+  <div id="footer"></div>
+
+  <script src="js/include.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
