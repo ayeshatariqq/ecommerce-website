@@ -160,6 +160,17 @@
   border-radius: 12px;
   padding: 5px 10px;
 }
+  .product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background-color: white;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    background-color: #f9f9f9;
+  }
 
 /*Form*/
 .quote-section {
