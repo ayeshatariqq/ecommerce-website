@@ -1,0 +1,199 @@
+    /* Header Footer */
+    .top-bar {
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .top-bar .brand-icon {
+      font-size: 1.8rem;
+      color: #409eff;
+      margin-right: 8px;
+    }
+
+    .search-bar input {
+      border-right: none;
+    }
+
+    .search-bar .form-select {
+      border-left: none;
+      border-right: none;
+    }
+
+    .search-bar .btn {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .icon-label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .icon-label i {
+      font-size: 1.2rem;
+    }
+
+    .bottom-bar {
+      font-size: 0.95rem;
+      padding: 10px 0;
+    }
+
+    .bottom-bar .nav-link {
+      color: #333;
+      margin-right: 15px;
+    }
+
+    .bottom-bar .dropdown-toggle::after {
+      margin-left: 4px;
+    }
+
+/*main content*/
+    .category-list a {
+      display: block;
+      padding: 8px 12px;
+      color: #333;
+      text-decoration: none;
+    }
+    .category-list a.active {
+      background-color: #e7f1ff;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+      .promo-card {
+      background-color: #a0e0d0;
+      height: 100%;
+      border-radius: 8px;
+      color: black;
+      padding: 40px 30px;
+    }
+
+        .user-card {
+      background-color: #e7f1ff;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .user-card .btn-primary {
+      background-color: #007bff;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .info-btn {
+  height: 80px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: normal; 
+  border: none;
+  color: white;
+}
+
+.orange-btn {
+  background-color: #f17537;
+}
+
+.orange-btn:hover {
+  background-color: #d6551c;
+}
+
+.blue-btn {
+  background-color: #3fbcbc;
+}
+
+.blue-btn:hover {
+  background-color: #29a1a1;
+}
+
+
+.deal-timer {
+  background: #343a40;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  min-width: 50px;
+}
+.deal-timer span {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: normal;
+}
+
+.deal-item img {
+  max-width: 100px;
+  height: auto;
+}
+
+.deal-item p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0;
+}
+
+.badge {
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.deal-item {
+  padding: 0 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deal-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 8px;
+}
+
+.border-start {
+  border-left: 1px solid #e2e8f0;
+}
+
+.badge {
+  background-color: #ffe6ea !important; 
+  color: #ff3b3b !important;            
+  border-radius: 12px;
+  padding: 5px 10px;
+}
+
+/*Form*/
+.quote-section {
+  background: linear-gradient(to right, rgba(0, 102, 255, 0.7), rgba(0, 191, 255, 0.5));
+}
+
+/*Extra Services*/
+.card-img-top {
+  height: 180px;    
+  object-fit: cover;  
+}
+
+.floating-btn {
+  background-color: #f8f9fa;  
+  border: none;
+  padding: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.floating-btn:hover {
+  background-color: #007bff; 
+  color: white;
+}
+
+.custom-col {
+  flex: 0 0 20%;  
+  max-width: 20%;
+}
+
+/* Breadcrumb */
+.breadcrumb-custom {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+.breadcrumb-custom .breadcrumb-item a { color: var(--muted); text-decoration: none; }
+.breadcrumb-custom .breadcrumb-item.active { color: #212529; font-weight:600; }

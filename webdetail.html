@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-commerce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/webdetail.css">
+</head>
+
+
+<body>
+  <div id="header"></div>
+
+<div class="container py-3 product-container">
+
+    <!-- Breadcrumb -->
+    <nav style="--bs-breadcrumb-divider: '›';" aria-label="breadcrumb">
+      <ol class="breadcrumb mb-4 breadcrumb-custom">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Clothing</a></li>
+        <li class="breadcrumb-item"><a href="#">Men's wear</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Summer clothing</li>
+      </ol>
+    </nav>
+
+    <!-- TOP: 3 columns (Image | Details | Supplier) -->
+    <div class="row gx-4 align-items-start">
+      <!-- Large image -->
+      <div class="col-lg-4">
+        <div class="card image-card">
+          <div class="image-box">
+            <img id="mainImage" src="assets/images/cloth/8.jpeg" alt="product" class="main-image">
+          </div>
+
+          <div class="thumb-list mt-3 d-flex align-items-center">
+            <div class="thumb selected" data-src="/mnt/data/8e61d7ce-a8af-4b49-8dde-04160563e5c7.png">
+              <img src="assets/images/cloth/8.jpeg" alt="" />
+            </div>
+            <div class="thumb" data-src="https://via.placeholder.com/120x160?text=2">
+              <img src="assets/images/cloth/8.jpeg" alt="" />
+            </div>
+            <div class="thumb" data-src="https://via.placeholder.com/120x160?text=3">
+              <img src="assets/images/cloth/8.jpeg" alt="" />
+            </div>
+            <div class="thumb" data-src="https://via.placeholder.com/120x160?text=4">
+              <img src="assets/images/cloth/8.jpeg" alt="" />
+            </div>
+            <div class="thumb" data-src="https://via.placeholder.com/120x160?text=5">
+              <img src="assets/images/cloth/8.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle: Product details -->
+      <div class="col-lg-5">
+        <div class="card product-info-card">
+          <div class="stock small text-success mb-1">✔ In stock</div>
+          <h2 class="product-title">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h2>
+
+          <div class="d-flex align-items-center small-text text-muted mb-3">
+            <span class="rating-badge">9.3</span>
+            <span class="ms-2 me-2">32 reviews</span>
+            <span class="text-muted mx-2">•</span>
+            <span>154 sold</span>
+          </div>
+
+          <!-- Price tiers (peach bg block) -->
+          <div class="price-box mb-3">
+            <div class="tier">
+              <div class="price text-danger">$98.00</div>
+              <div class="tier-qty">50-100 pcs</div>
+            </div>
+            <div class="tier">
+              <div class="price">$90.00</div>
+              <div class="tier-qty">100-700 pcs</div>
+            </div>
+            <div class="tier">
+              <div class="price text-primary">$78.00</div>
+              <div class="tier-qty">700+ pcs</div>
+            </div>
+          </div>
+
+          <!-- Specs (aligned label : value) -->
+          <div class="specs mb-3">
+            <div class="spec-row"><div class="label">Price:</div><div class="value">Negotiable</div></div>
+            <div class="spec-row"><div class="label">Type:</div><div class="value">Classic shoes</div></div>
+            <div class="spec-row"><div class="label">Material:</div><div class="value">Plastic material</div></div>
+            <div class="spec-row"><div class="label">Design:</div><div class="value">Modern nice</div></div>
+            <div class="spec-row"><div class="label">Customization:</div><div class="value">Customized logo & design packages</div></div>
+            <div class="spec-row"><div class="label">Protection:</div><div class="value">Refund Policy</div></div>
+            <div class="spec-row"><div class="label">Warranty:</div><div class="value">2 years full warranty</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Supplier card (narrow) -->
+      <div class="col-lg-3">
+        <div class="card seller-card">
+          <div class="d-flex align-items-center mb-2">
+            <div class="supplier-avatar">R</div>
+            <div class="ms-2">
+              <div class="supplier-title">Supplier</div>
+              <small class="text-muted">Guanjoi Trading LLC</small>
+            </div>
+          </div>
+
+          <div class="supplier-meta small-text mb-3">
+            <div>🇩🇪 Germany, Berlin</div>
+            <div>✔ Verified Seller</div>
+            <div>🌍 Worldwide shipping</div>
+          </div>
+
+          <button class="btn btn-primary w-100 mb-2">Send inquiry</button>
+          <button class="btn btn-outline-primary w-100">Seller's profile</button>
+          <div class="d-grid gap-2">
+            <button class="btn btn-outline-secondary">
+              <i class="bi bi-heart me-2"></i> Save for later
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECOND ROW: Tabs and You may like -->
+    <div class="row gx-4 mt-4">
+      <div class="col-lg-9">
+        <div class="card tabs-card">
+          <ul class="nav nav-tabs px-3 pt-2" id="productTab" role="tablist">
+            <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#desc" type="button">Description</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#reviews" type="button">Reviews</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#shipping" type="button">Shipping</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#about" type="button">About seller</button></li>
+          </ul>
+
+          <div class="tab-content p-4">
+            <div class="tab-pane fade show active" id="desc">
+              <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+
+              <table class="table specs-table mt-3">
+                <tbody>
+                  <tr><th>Model</th><td>#8786867</td></tr>
+                  <tr><th>Style</th><td>Classic style</td></tr>
+                  <tr><th>Certificate</th><td>ISO-88921212</td></tr>
+                  <tr><th>Size</th><td>34mm x 450mm x 19mm</td></tr>
+                  <tr><th>Memory</th><td>36GB RAM</td></tr>
+                </tbody>
+              </table>
+
+              <ul class="feature-list small-text">
+                <li>✔ Some great feature name here</li>
+                <li>✔ Lorem ipsum dolor sit amet, consectetur</li>
+                <li>✔ Duis aute irure dolor in reprehenderit</li>
+                <li>✔ Some great feature name here</li>
+              </ul>
+            </div>
+
+            <div class="tab-pane fade" id="reviews">Reviews content...</div>
+            <div class="tab-pane fade" id="shipping">Shipping info...</div>
+            <div class="tab-pane fade" id="about">About seller...</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- You may like -->
+      <div class="col-lg-3">
+        <div class="card recommended-card">
+          <h6 class="px-3 pt-3 mb-2">You may like</h6>
+          <div class="list-group list-group-flush">
+            <a href="webdetail.html" class="list-group-item list-group-item-action d-flex align-items-center">
+              <img src="assets/images/cloth/7.jpg" class="me-3" alt="">
+              <div class="rec-title">Men Blazers Sets Elegant Formal</div>
+              <div class="ms-auto text-muted small">$7.00 - $99.50</div>
+            </a>
+
+            <a href="webdetail.html" class="list-group-item list-group-item-action d-flex align-items-center">
+              <img src="assets/images/cloth/1.jpg" class="me-3" alt="">
+              <div class="rec-title">Men Shirt Sleeve Polo Contrast</div>
+              <div class="ms-auto text-muted small">$7.00 - $99.50</div>
+            </a>
+
+            <a href="webdetail.html" class="list-group-item list-group-item-action d-flex align-items-center">
+              <img src="assets/images/cloth/3.jpg" class="me-3" alt="">
+              <div class="rec-title">Apple Watch Series Space Gray</div>
+              <div class="ms-auto text-muted small">$7.00 - $99.50</div>
+            </a>
+
+            <a href="webdetail.html" class="list-group-item list-group-item-action d-flex align-items-center">
+              <img src="assets/images/cloth/2.jpg" class="me-3" alt="">
+              <div class="rec-title">Apple Watch Series Space Gray</div>
+              <div class="ms-auto text-muted small">$7.00 - $99.50</div>
+            </a>
+
+            <a href="webdetail.html" class="list-group-item list-group-item-action d-flex align-items-center">
+              <img src="assets/images/cloth/4.jpg" class="me-3" alt="">
+              <div class="rec-title">Apple Watch Series Space Gray</div>
+              <div class="ms-auto text-muted small">$7.00 - $99.50</div>
+            </a>
+
+            <a href="webdetail.html" class="list-group-item list-group-item-action d-flex align-items-center">
+              <img src="assets/images/cloth/5.jpg" class="me-3" alt="">
+              <div class="rec-title">Apple Watch Series Space Gray</div>
+              <div class="ms-auto text-muted small">$7.00 - $99.50</div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Products -->
+
+<div class="card mt-4">
+  <div class="card-body">
+    <h5 class="mb-3 fw-bold">Related products</h5>
+    <div class="row g-3">
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="text-center related-product">
+          <img src="assets/images/cloth/6.jpg" alt="Wallet" class="img-fluid rounded">
+          <p class="mt-2 mb-0 small">Xiaomi Redmi 8 Original</p>
+          <p class="text-success small">$32.00–$40.00</p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="text-center related-product">
+          <img src="assets/images/tech/8.jpg" alt="Watch" class="img-fluid rounded">
+          <p class="mt-2 mb-0 small">Xiaomi Redmi 8 Original</p>
+          <p class="text-success small">$32.00–$40.00</p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="text-center related-product">
+          <img src="assets/images/tech/9.jpg" alt="Watch" class="img-fluid rounded">
+          <p class="mt-2 mb-0 small">Xiaomi Redmi 8 Original</p>
+          <p class="text-success small">$32.00–$40.00</p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="text-center related-product">
+          <img src="assets/images/cloth/4.jpg" alt="Watch" class="img-fluid rounded">
+          <p class="mt-2 mb-0 small">Xiaomi Redmi 8 Original</p>
+          <p class="text-success small">$32.00–$40.00</p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="text-center related-product">
+          <img src="assets/images/tech/10.jpg" alt="Watch" class="img-fluid rounded">
+          <p class="mt-2 mb-0 small">Xiaomi Redmi 8 Original</p>
+          <p class="text-success small">$32.00–$40.00</p>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="text-center related-product">
+          <img src="assets/images/interior/6.jpg" alt="Watch" class="img-fluid rounded">
+          <p class="mt-2 mb-0 small">Xiaomi Redmi 8 Original</p>
+          <p class="text-success small">$32.00–$40.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Discount Banner -->
+<div class="mt-4 p-4 rounded d-flex justify-content-between align-items-center" 
+     style="background: linear-gradient(to right, #007bff, #0056d2); color: white;">
+  <div>
+    <h5 class="mb-1 fw-bold">Super discount on more than 100 USD</h5>
+    <p class="mb-0 small" style="opacity: 0.85;">Have you ever finally just write dummy info</p>
+  </div>
+  <a href="#" class="btn btn-warning fw-bold text-white">Shop now</a>
+</div>
+
+  </div>
+
+  <div id="footer"></div>
+
+  <script src="js/include.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+        // thumbnail click -> swap main image, highlight selected
+    document.querySelectorAll('.thumb').forEach(t => {
+      t.addEventListener('click', () => {
+        const src = t.getAttribute('data-src');
+        document.getElementById('mainImage').src = src;
+        document.querySelectorAll('.thumb').forEach(x => x.classList.remove('selected'));
+        t.classList.add('selected');
+      });
+    });
+  </script>
+</body>
+</html>

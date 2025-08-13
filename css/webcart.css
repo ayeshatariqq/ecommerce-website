@@ -1,0 +1,57 @@
+/* Base style for saved items */
+.saved-item {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.saved-item:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  border-color: #007bff;
+}
+
+/* Image styling */
+.saved-item img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.saved-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .saved-item {
+    padding: 8px;
+  }
+  .saved-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+    body { background-color: #f7f9fc; }
+    .cart-section, .saved-section, .summary-box, .coupon-box {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      border: 1px solid #eee;
+      margin-bottom: 20px;
+    }
+    .cart-item { border-bottom: 1px solid #eee; padding: 15px 0; }
+    .cart-item img { width: 70px; border-radius: 8px; }
+    .cart-actions button { margin-right: 6px; }
+    .qty-select { width: 80px; }
+    .saved-item img { width: 100%; border-radius: 8px; }
+    .saved-item { text-align: center; }
+    .saved-item h6 { font-size: 14px; margin-top: 8px; }
+    .payment-icons img {
+      max-height: 40px;
+      margin: 0 5px;
+    }
